@@ -8,6 +8,8 @@ This is the README.MD file published at https://github.com/emilybache/Yatzy-Refa
 
 All credit to Emily Bache and my teacher, who proposed to make this exercise in class.
 
+I have used "pytest" for testing the utilities of the class, install it with "pip" if you want to use it as well.
+
 --------------------------
 
 ## Kata: Yatzy rules
