@@ -1,10 +1,8 @@
 class Yatzy:
 
-    def __init__(self, *dices):
-        self.dices = list(*dices)
+    ### Public methods ###
 
-### Public methods ###
-
+    @staticmethod
     def chance(*dices):
 
         total = 0
@@ -14,6 +12,7 @@ class Yatzy:
 
         return total
 
+    @staticmethod
     def yatzy(*dices):
 
         total = 0
@@ -28,42 +27,49 @@ class Yatzy:
         total = 50
         return total
 
+    @staticmethod
     def ones(*dices):
 
         total = dices.count(1)
 
         return total
 
+    @staticmethod
     def twos(*dices):
 
         total = dices.count(2) * 2
 
         return total
 
+    @staticmethod
     def threes(*dices):
 
         total = dices.count(3) * 3
 
         return total
 
+    @staticmethod
     def fours(*dices):
 
         total = dices.count(4) * 4
 
         return total
 
+    @staticmethod
     def fives(*dices):
 
         total = dices.count(5) * 5
 
         return total
 
+    @staticmethod
     def sixes(*dices):
 
         total = dices.count(6) * 6
 
         return total
 
+    @staticmethod
     def pair(*dices):
 
         total = 0
@@ -84,6 +90,7 @@ class Yatzy:
         else:
             return total
 
+    @staticmethod
     def strict_pair(*dices):
 
         for number in range(1, 7):
@@ -93,6 +100,7 @@ class Yatzy:
 
         return 0
 
+    @staticmethod
     def two_pairs(*dices):
 
         total = 0
@@ -116,6 +124,7 @@ class Yatzy:
         else:
             return total
 
+    @staticmethod
     def four_of_a_kind(*dices):
 
         total = 0
@@ -136,6 +145,7 @@ class Yatzy:
         else:
             return total
 
+    @staticmethod
     def three_of_a_kind(*dices):
 
         total = 0
@@ -156,6 +166,7 @@ class Yatzy:
         else:
             return total
 
+    @staticmethod
     def small_straight(*dices):
         total = 0
 
@@ -165,6 +176,7 @@ class Yatzy:
 
         return Yatzy.chance(*dices)
 
+    @staticmethod
     def large_straight(*dices):
         total = 0
 
@@ -174,6 +186,7 @@ class Yatzy:
 
         return Yatzy.chance(*dices)
 
+    @staticmethod
     def full_house(*dices):
         total = 0
 
