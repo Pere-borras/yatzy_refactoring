@@ -84,11 +84,11 @@ class Yatzy:
         else:
             return total
 
-    def strict_pair(*dice):
+    def strict_pair(*dices):
 
         for number in range(1, 7):
 
-            if dice.count(number) == 2:
+            if dices.count(number) == 2:
                 return 2 * number
 
         return 0
